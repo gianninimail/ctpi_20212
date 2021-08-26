@@ -1,0 +1,13 @@
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Release\View.exe.config
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Release\View.exe
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Release\View.pdb
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Release\View.csprojAssemblyReference.cache
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Release\View.FrmPrincipal.resources
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Release\View.Properties.Resources.resources
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Release\View.csproj.GenerateResource.cache
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Release\View.csproj.CoreCompileInputs.cache
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Release\View.exe
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Release\View.pdb
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Release\Model.dll
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Release\Model.pdb
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Release\View.csproj.CopyComplete

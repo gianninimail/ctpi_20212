@@ -39,9 +39,9 @@ namespace View
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(164, 57);
             this.btnOk.TabIndex = 0;
-            this.btnOk.Text = "Ok";
+            this.btnOk.Text = "Chamar FrmCadPessoa";
             this.btnOk.UseVisualStyleBackColor = true;
-            this.btnOk.Click += new System.EventHandler(this.MensagemNaTela);
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
@@ -56,7 +56,7 @@ namespace View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 594);
+            this.ClientSize = new System.Drawing.Size(815, 416);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Name = "FrmPrincipal";

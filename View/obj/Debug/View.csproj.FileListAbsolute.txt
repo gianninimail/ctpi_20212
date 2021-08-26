@@ -8,3 +8,6 @@ C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Debug\View.csproj.Cor
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Debug\View.exe
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Debug\View.pdb
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Debug\View.FrmPrincipal.resources
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Debug\Model.dll
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Debug\Model.pdb
+C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Debug\View.csproj.CopyComplete

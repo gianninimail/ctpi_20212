@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
 
 namespace View
 {
@@ -14,17 +15,19 @@ namespace View
     {
         public FrmPrincipal()
         {
+            FrmLogin formLogin = new FrmLogin();
+            this.Visible = false;
+            formLogin.ShowDialog();
+            this.Visible = true;
+
             InitializeComponent();
         }
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Você apertou no botão OK!!");
-        }
+            FrmCadPessoa formCadPessoa = new FrmCadPessoa();
 
-        private void MensagemNaTela(object sender, EventArgs e)
-        {
-            MessageBox.Show("Novo método funcionando!!");
+            formCadPessoa.ShowDialog();
         }
     }
 }
