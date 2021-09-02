@@ -29,46 +29,56 @@ namespace View
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnOk = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.barraStatus = new System.Windows.Forms.StatusStrip();
+            this.itbUsuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.barraStatus.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnOk
+            // barraStatus
             // 
-            this.btnOk.Location = new System.Drawing.Point(426, 140);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(164, 57);
-            this.btnOk.TabIndex = 0;
-            this.btnOk.Text = "Chamar FrmCadPessoa";
-            this.btnOk.UseVisualStyleBackColor = true;
-            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            this.barraStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.itbUsuarioLogado});
+            this.barraStatus.Location = new System.Drawing.Point(0, 505);
+            this.barraStatus.Name = "barraStatus";
+            this.barraStatus.Size = new System.Drawing.Size(1060, 22);
+            this.barraStatus.TabIndex = 0;
+            this.barraStatus.Text = "statusStrip1";
             // 
-            // btnCancel
+            // itbUsuarioLogado
             // 
-            this.btnCancel.Location = new System.Drawing.Point(166, 138);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(173, 59);
-            this.btnCancel.TabIndex = 1;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.itbUsuarioLogado.Name = "itbUsuarioLogado";
+            this.itbUsuarioLogado.Size = new System.Drawing.Size(86, 17);
+            this.itbUsuarioLogado.Text = "usuarioLogado";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(96, 17);
+            this.toolStripStatusLabel1.Text = "Usuário Logado: ";
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 416);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnOk);
+            this.ClientSize = new System.Drawing.Size(1060, 527);
+            this.Controls.Add(this.barraStatus);
             this.Name = "FrmPrincipal";
             this.Text = "Aplicação de Exemplo de Aula";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
+            this.barraStatus.ResumeLayout(false);
+            this.barraStatus.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnOk;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.StatusStrip barraStatus;
+        private System.Windows.Forms.ToolStripStatusLabel itbUsuarioLogado;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

@@ -15,19 +15,24 @@ namespace View
     {
         public FrmPrincipal()
         {
-            FrmLogin formLogin = new FrmLogin();
-            this.Visible = false;
-            formLogin.ShowDialog();
-            this.Visible = true;
-
             InitializeComponent();
         }
 
-        private void btnOk_Click(object sender, EventArgs e)
+        private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            FrmCadPessoa formCadPessoa = new FrmCadPessoa();
+            FrmLogin formLogin = new FrmLogin();
+            this.Hide();
 
-            formCadPessoa.ShowDialog();
+            if (formLogin.ShowDialog() == DialogResult.OK)
+            {
+                User u = (User)formLogin.Tag;
+                itbUsuarioLogado.Text = u.Usuario;
+                this.Show();
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }
