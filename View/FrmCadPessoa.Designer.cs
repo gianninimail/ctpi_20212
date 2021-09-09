@@ -29,53 +29,69 @@ namespace View
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gpbEndereco = new System.Windows.Forms.GroupBox();
             this.ltbTipoEndereco = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbLogradouro = new System.Windows.Forms.TextBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.cmbCidade = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gpbDadosComplementares = new System.Windows.Forms.GroupBox();
             this.rdbMasculino = new System.Windows.Forms.RadioButton();
             this.rdbFeminino = new System.Windows.Forms.RadioButton();
             this.rdbOutros = new System.Windows.Forms.RadioButton();
             this.rdbSolteiro = new System.Windows.Forms.RadioButton();
             this.rdbCasado = new System.Windows.Forms.RadioButton();
             this.rdbEnrolado = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.chkAnimais = new System.Windows.Forms.CheckBox();
+            this.chkFilhos = new System.Windows.Forms.CheckBox();
+            this.chkFumante = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gpbDadosPrincipais = new System.Windows.Forms.GroupBox();
+            this.ptbFoto = new System.Windows.Forms.PictureBox();
+            this.mtbCPF = new System.Windows.Forms.MaskedTextBox();
+            this.txbNome = new System.Windows.Forms.TextBox();
+            this.mtbNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.txbEmail = new System.Windows.Forms.TextBox();
+            this.mtbCel = new System.Windows.Forms.MaskedTextBox();
+            this.txbProfissao = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.v = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.gpbEndereco.SuspendLayout();
+            this.gpbDadosComplementares.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.gpbDadosPrincipais.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gpbEndereco
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.cmbCidade);
-            this.groupBox1.Controls.Add(this.cmbEstado);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.ltbTipoEndereco);
-            this.groupBox1.Location = new System.Drawing.Point(12, 294);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(667, 188);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Endereço";
+            this.gpbEndereco.Controls.Add(this.label4);
+            this.gpbEndereco.Controls.Add(this.label3);
+            this.gpbEndereco.Controls.Add(this.label2);
+            this.gpbEndereco.Controls.Add(this.label1);
+            this.gpbEndereco.Controls.Add(this.cmbCidade);
+            this.gpbEndereco.Controls.Add(this.cmbEstado);
+            this.gpbEndereco.Controls.Add(this.txbLogradouro);
+            this.gpbEndereco.Controls.Add(this.ltbTipoEndereco);
+            this.gpbEndereco.Location = new System.Drawing.Point(12, 277);
+            this.gpbEndereco.Name = "gpbEndereco";
+            this.gpbEndereco.Size = new System.Drawing.Size(667, 188);
+            this.gpbEndereco.TabIndex = 1;
+            this.gpbEndereco.TabStop = false;
+            this.gpbEndereco.Text = "Endereço";
             // 
             // ltbTipoEndereco
             // 
@@ -91,14 +107,14 @@ namespace View
             this.ltbTipoEndereco.Size = new System.Drawing.Size(120, 108);
             this.ltbTipoEndereco.TabIndex = 0;
             // 
-            // textBox1
+            // txbLogradouro
             // 
-            this.textBox1.Location = new System.Drawing.Point(170, 55);
-            this.textBox1.MaxLength = 250;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 107);
-            this.textBox1.TabIndex = 1;
+            this.txbLogradouro.Location = new System.Drawing.Point(170, 55);
+            this.txbLogradouro.MaxLength = 250;
+            this.txbLogradouro.Multiline = true;
+            this.txbLogradouro.Name = "txbLogradouro";
+            this.txbLogradouro.Size = new System.Drawing.Size(220, 107);
+            this.txbLogradouro.TabIndex = 1;
             // 
             // cmbEstado
             // 
@@ -165,17 +181,17 @@ namespace View
             this.label4.TabIndex = 7;
             this.label4.Text = "Cidade:";
             // 
-            // groupBox2
+            // gpbDadosComplementares
             // 
-            this.groupBox2.Controls.Add(this.groupBox5);
-            this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Location = new System.Drawing.Point(12, 502);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(667, 169);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Dados Complementares";
+            this.gpbDadosComplementares.Controls.Add(this.groupBox5);
+            this.gpbDadosComplementares.Controls.Add(this.groupBox4);
+            this.gpbDadosComplementares.Controls.Add(this.groupBox3);
+            this.gpbDadosComplementares.Location = new System.Drawing.Point(12, 493);
+            this.gpbDadosComplementares.Name = "gpbDadosComplementares";
+            this.gpbDadosComplementares.Size = new System.Drawing.Size(667, 169);
+            this.gpbDadosComplementares.TabIndex = 2;
+            this.gpbDadosComplementares.TabStop = false;
+            this.gpbDadosComplementares.Text = "Dados Complementares";
             // 
             // rdbMasculino
             // 
@@ -243,41 +259,41 @@ namespace View
             this.rdbEnrolado.Text = "Enrolado";
             this.rdbEnrolado.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkAnimais
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(25, 26);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(62, 17);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Animais";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkAnimais.AutoSize = true;
+            this.chkAnimais.Location = new System.Drawing.Point(25, 26);
+            this.chkAnimais.Name = "chkAnimais";
+            this.chkAnimais.Size = new System.Drawing.Size(62, 17);
+            this.chkAnimais.TabIndex = 6;
+            this.chkAnimais.Text = "Animais";
+            this.chkAnimais.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkFilhos
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(25, 64);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(53, 17);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "Filhos";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkFilhos.AutoSize = true;
+            this.chkFilhos.Location = new System.Drawing.Point(25, 64);
+            this.chkFilhos.Name = "chkFilhos";
+            this.chkFilhos.Size = new System.Drawing.Size(53, 17);
+            this.chkFilhos.TabIndex = 7;
+            this.chkFilhos.Text = "Filhos";
+            this.chkFilhos.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkFumante
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(25, 102);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(67, 17);
-            this.checkBox3.TabIndex = 8;
-            this.checkBox3.Text = "Fumante";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkFumante.AutoSize = true;
+            this.chkFumante.Location = new System.Drawing.Point(25, 102);
+            this.chkFumante.Name = "chkFumante";
+            this.chkFumante.Size = new System.Drawing.Size(67, 17);
+            this.chkFumante.TabIndex = 8;
+            this.chkFumante.Text = "Fumante";
+            this.chkFumante.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.checkBox1);
-            this.groupBox3.Controls.Add(this.checkBox3);
-            this.groupBox3.Controls.Add(this.checkBox2);
+            this.groupBox3.Controls.Add(this.chkAnimais);
+            this.groupBox3.Controls.Add(this.chkFumante);
+            this.groupBox3.Controls.Add(this.chkFilhos);
             this.groupBox3.Location = new System.Drawing.Point(432, 23);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(145, 130);
@@ -326,47 +342,184 @@ namespace View
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // gpbDadosPrincipais
+            // 
+            this.gpbDadosPrincipais.Controls.Add(this.label9);
+            this.gpbDadosPrincipais.Controls.Add(this.v);
+            this.gpbDadosPrincipais.Controls.Add(this.label8);
+            this.gpbDadosPrincipais.Controls.Add(this.label7);
+            this.gpbDadosPrincipais.Controls.Add(this.label6);
+            this.gpbDadosPrincipais.Controls.Add(this.label5);
+            this.gpbDadosPrincipais.Controls.Add(this.txbProfissao);
+            this.gpbDadosPrincipais.Controls.Add(this.mtbCel);
+            this.gpbDadosPrincipais.Controls.Add(this.txbEmail);
+            this.gpbDadosPrincipais.Controls.Add(this.mtbNascimento);
+            this.gpbDadosPrincipais.Controls.Add(this.txbNome);
+            this.gpbDadosPrincipais.Controls.Add(this.mtbCPF);
+            this.gpbDadosPrincipais.Controls.Add(this.ptbFoto);
+            this.gpbDadosPrincipais.Location = new System.Drawing.Point(12, 28);
+            this.gpbDadosPrincipais.Name = "gpbDadosPrincipais";
+            this.gpbDadosPrincipais.Size = new System.Drawing.Size(667, 220);
+            this.gpbDadosPrincipais.TabIndex = 0;
+            this.gpbDadosPrincipais.TabStop = false;
+            this.gpbDadosPrincipais.Text = "Dados Principais";
+            // 
+            // ptbFoto
+            // 
+            this.ptbFoto.Location = new System.Drawing.Point(33, 41);
+            this.ptbFoto.Name = "ptbFoto";
+            this.ptbFoto.Size = new System.Drawing.Size(100, 129);
+            this.ptbFoto.TabIndex = 0;
+            this.ptbFoto.TabStop = false;
+            // 
+            // mtbCPF
+            // 
+            this.mtbCPF.Location = new System.Drawing.Point(154, 56);
+            this.mtbCPF.Mask = "000.000.000-00";
+            this.mtbCPF.Name = "mtbCPF";
+            this.mtbCPF.Size = new System.Drawing.Size(174, 20);
+            this.mtbCPF.TabIndex = 1;
+            // 
+            // txbNome
+            // 
+            this.txbNome.Location = new System.Drawing.Point(154, 102);
+            this.txbNome.Name = "txbNome";
+            this.txbNome.Size = new System.Drawing.Size(174, 20);
+            this.txbNome.TabIndex = 2;
+            // 
+            // mtbNascimento
+            // 
+            this.mtbNascimento.Location = new System.Drawing.Point(154, 150);
+            this.mtbNascimento.Mask = "00/00/0000";
+            this.mtbNascimento.Name = "mtbNascimento";
+            this.mtbNascimento.Size = new System.Drawing.Size(174, 20);
+            this.mtbNascimento.TabIndex = 3;
+            this.mtbNascimento.ValidatingType = typeof(System.DateTime);
+            // 
+            // txbEmail
+            // 
+            this.txbEmail.Location = new System.Drawing.Point(403, 56);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(190, 20);
+            this.txbEmail.TabIndex = 4;
+            // 
+            // mtbCel
+            // 
+            this.mtbCel.Location = new System.Drawing.Point(403, 102);
+            this.mtbCel.Mask = "(99) 90000-0000";
+            this.mtbCel.Name = "mtbCel";
+            this.mtbCel.Size = new System.Drawing.Size(190, 20);
+            this.mtbCel.TabIndex = 5;
+            // 
+            // txbProfissao
+            // 
+            this.txbProfissao.Location = new System.Drawing.Point(403, 150);
+            this.txbProfissao.Name = "txbProfissao";
+            this.txbProfissao.Size = new System.Drawing.Size(190, 20);
+            this.txbProfissao.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(151, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(30, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "CPF:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(154, 86);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Nome:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(154, 134);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Nascimento:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(400, 40);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 13);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "E-mail:";
+            // 
+            // v
+            // 
+            this.v.AutoSize = true;
+            this.v.Location = new System.Drawing.Point(400, 86);
+            this.v.Name = "v";
+            this.v.Size = new System.Drawing.Size(25, 13);
+            this.v.TabIndex = 11;
+            this.v.Text = "Cel:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(400, 134);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Profissão:";
             // 
             // FrmCadPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 773);
+            this.ControlBox = false;
+            this.Controls.Add(this.gpbDadosPrincipais);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Controls.Add(this.gpbDadosComplementares);
+            this.Controls.Add(this.gpbEndereco);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmCadPessoa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrado de Usuários";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.gpbEndereco.ResumeLayout(false);
+            this.gpbEndereco.PerformLayout();
+            this.gpbDadosComplementares.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.gpbDadosPrincipais.ResumeLayout(false);
+            this.gpbDadosPrincipais.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFoto)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gpbEndereco;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbCidade;
         private System.Windows.Forms.ComboBox cmbEstado;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbLogradouro;
         private System.Windows.Forms.ListBox ltbTipoEndereco;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.GroupBox gpbDadosComplementares;
+        private System.Windows.Forms.CheckBox chkFumante;
+        private System.Windows.Forms.CheckBox chkFilhos;
+        private System.Windows.Forms.CheckBox chkAnimais;
         private System.Windows.Forms.RadioButton rdbEnrolado;
         private System.Windows.Forms.RadioButton rdbCasado;
         private System.Windows.Forms.RadioButton rdbSolteiro;
@@ -378,5 +531,19 @@ namespace View
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.GroupBox gpbDadosPrincipais;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label v;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txbProfissao;
+        private System.Windows.Forms.MaskedTextBox mtbCel;
+        private System.Windows.Forms.TextBox txbEmail;
+        private System.Windows.Forms.MaskedTextBox mtbNascimento;
+        private System.Windows.Forms.TextBox txbNome;
+        private System.Windows.Forms.MaskedTextBox mtbCPF;
+        private System.Windows.Forms.PictureBox ptbFoto;
     }
 }

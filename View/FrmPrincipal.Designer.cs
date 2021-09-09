@@ -192,7 +192,6 @@ namespace View
             this.Controls.Add(this.barraTarefas);
             this.Controls.Add(this.barraStatus);
             this.Controls.Add(this.menuPrincipal);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuPrincipal;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
