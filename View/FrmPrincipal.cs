@@ -34,5 +34,27 @@ namespace View
                 this.Close();
             }
         }
+
+        private void tHora_Tick(object sender, EventArgs e)
+        {
+            itbHora.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tHora.Enabled = true;
+        }
+
+        private void imSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void brBtnCadastrar_Click(object sender, EventArgs e)
+        {
+            FrmCadPessoa form = new FrmCadPessoa();
+
+            form.ShowDialog();
+        }
     }
 }
