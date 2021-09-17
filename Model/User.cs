@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class User
+    public class User : Pessoa
     {
-        public Int64 CPF { get; set; }
 
         public String Usuario { get; set; }
 

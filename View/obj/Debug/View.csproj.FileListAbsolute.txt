@@ -26,3 +26,4 @@ C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.exe
 C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.pdb
 C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.FrmCadPessoa.resources
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.FrmListaDePessoas.resources

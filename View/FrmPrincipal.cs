@@ -13,9 +13,11 @@ namespace View
 {
     public partial class FrmPrincipal : Form
     {
+        private Dictionary<Int64, Pessoa> mapaPessoas;
         public FrmPrincipal()
         {
             InitializeComponent();
+            mapaPessoas = new Dictionary<Int64, Pessoa>();
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
@@ -55,6 +57,19 @@ namespace View
             FrmCadPessoa form = new FrmCadPessoa();
 
             form.ShowDialog();
+
+            Pessoa p = (Pessoa)form.Tag;
+
+            mapaPessoas.Add(p.CPF, p);
+        }
+
+        private void brBtnListarPessoas_Click(object sender, EventArgs e)
+        {
+            FrmListaDePessoas f = new FrmListaDePessoas();
+
+            f.Tag = mapaPessoas;
+
+            f.ShowDialog();
         }
     }
 }

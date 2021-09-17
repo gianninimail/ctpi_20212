@@ -24,6 +24,8 @@ namespace View
             user.Usuario = txbUsuario.Text;
             user.Senha = txbSenha.Text;
 
+            user.
+
             if (ValidarLogin(user))
             {
                 this.DialogResult = DialogResult.OK;
