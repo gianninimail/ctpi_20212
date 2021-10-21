@@ -1,0 +1,12 @@
+﻿-- Script Date: 20/10/2021 20:29  - ErikEJ.SqlCeScripting version 3.5.2.90
+CREATE TABLE [enderecos] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [tipo_end] int NOT NULL
+, [logradouro] nvarchar(250) NOT NULL
+, [cidade_id] int NOT NULL
+, [estado_id] int NOT NULL
+, [pessoa_cpf] bigint NOT NULL
+);
+GO
+ALTER TABLE [enderecos] ADD CONSTRAINT [PK_enderecos] PRIMARY KEY ([id]);
+GO

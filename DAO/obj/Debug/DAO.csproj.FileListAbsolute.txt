@@ -1,0 +1,2 @@
+C:\Users\User\source\repos\ctpi_20212\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\ctpi_20212\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache

@@ -11,19 +11,19 @@ C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Debug\View.FrmPrincip
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Debug\Model.dll
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\bin\Debug\Model.pdb
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Debug\View.csproj.CopyComplete
-C:\Users\User\Source\Repos\ctpi_20212\View\bin\Debug\View.exe.config
-C:\Users\User\Source\Repos\ctpi_20212\View\bin\Debug\View.exe
-C:\Users\User\Source\Repos\ctpi_20212\View\bin\Debug\View.pdb
-C:\Users\User\Source\Repos\ctpi_20212\View\bin\Debug\Model.dll
-C:\Users\User\Source\Repos\ctpi_20212\View\bin\Debug\Model.pdb
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.csproj.AssemblyReference.cache
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.FrmLogin.resources
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.FrmPrincipal.resources
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.Properties.Resources.resources
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.csproj.GenerateResource.cache
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.csproj.CopyComplete
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.exe
-C:\Users\User\Source\Repos\ctpi_20212\View\obj\Debug\View.pdb
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\View.exe.config
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\View.exe
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\View.pdb
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\Model.dll
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\Model.pdb
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.FrmCadPessoa.resources
 C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.FrmListaDePessoas.resources
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.FrmLogin.resources
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.FrmPrincipal.resources
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.Properties.Resources.resources
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.csproj.GenerateResource.cache
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.csproj.CopyComplete
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.exe
+C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.pdb

@@ -122,6 +122,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Control\Control.csproj">
+      <Project>{fa15b4b2-868b-4a3a-8084-d93bde549643}</Project>
+      <Name>Control</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{5d1e6855-5319-4adb-bf3f-ce01f081e664}</Project>
       <Name>Model</Name>

@@ -1,0 +1,17 @@
+﻿-- Script Date: 20/10/2021 21:18  - ErikEJ.SqlCeScripting version 3.5.2.90
+CREATE TABLE [pessoas] (
+  [cpf] bigint NOT NULL
+, [nome] nvarchar(100) NOT NULL
+, [email] nvarchar(100) NULL
+, [cel] nvarchar(100) NULL
+, [nascimento] datetime NULL
+, [profissao] nvarchar(100) NULL
+, [sexo] nvarchar(100) NULL
+, [estado_civil] nvarchar(100) NULL
+, [filhos] bit NULL
+, [animais] bit NULL
+, [fumante] bit NULL
+);
+GO
+ALTER TABLE [pessoas] ADD CONSTRAINT [PK_pessoas] PRIMARY KEY ([cpf]);
+GO

@@ -4,9 +4,8 @@ C:\Users\Thiago G Ramos\source\repos\AppAula20212\Model\obj\Debug\Model.csprojAs
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\Model\obj\Debug\Model.dll
 C:\Users\Thiago G Ramos\source\repos\AppAula20212\Model\obj\Debug\Model.pdb
-C:\Users\User\Source\Repos\ctpi_20212\Model\bin\Debug\Model.dll
-C:\Users\User\Source\Repos\ctpi_20212\Model\bin\Debug\Model.pdb
-C:\Users\User\Source\Repos\ctpi_20212\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
-C:\Users\User\Source\Repos\ctpi_20212\Model\obj\Debug\Model.dll
-C:\Users\User\Source\Repos\ctpi_20212\Model\obj\Debug\Model.pdb
-C:\Users\User\Source\Repos\ctpi_20212\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\ctpi_20212\Model\bin\Debug\Model.dll
+C:\Users\User\source\repos\ctpi_20212\Model\bin\Debug\Model.pdb
+C:\Users\User\source\repos\ctpi_20212\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ctpi_20212\Model\obj\Debug\Model.dll
+C:\Users\User\source\repos\ctpi_20212\Model\obj\Debug\Model.pdb

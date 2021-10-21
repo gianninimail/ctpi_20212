@@ -1,0 +1,3 @@
+﻿-- Script Date: 20/10/2021 21:18  - ErikEJ.SqlCeScripting version 3.5.2.90
+ALTER TABLE [enderecos] ADD CONSTRAINT [fk_pessoas_enderecos] FOREIGN KEY ([pessoa_cpf]) REFERENCES [pessoas]([cpf]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO

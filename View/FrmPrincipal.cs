@@ -58,9 +58,9 @@ namespace View
 
             form.ShowDialog();
 
-            Pessoa p = (Pessoa)form.Tag;
+            //Pessoa p = (Pessoa)form.Tag;
 
-            mapaPessoas.Add(p.CPF, p);
+            //mapaPessoas.Add(p.CPF, p);
         }
 
         private void brBtnListarPessoas_Click(object sender, EventArgs e)
