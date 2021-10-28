@@ -150,5 +150,8 @@
   <ItemGroup>
     <None Include="Resources\logo2-lasallerj.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-list.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,14 +29,18 @@ namespace View
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvDados = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txbBusca = new System.Windows.Forms.TextBox();
             this.colCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txbBusca = new System.Windows.Forms.TextBox();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.menuPopup = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.miDeletar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
+            this.menuPopup.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvDados
@@ -48,6 +52,7 @@ namespace View
             this.colCPF,
             this.colNome,
             this.colEmail});
+            this.dgvDados.ContextMenuStrip = this.menuPopup;
             this.dgvDados.Location = new System.Drawing.Point(53, 71);
             this.dgvDados.MultiSelect = false;
             this.dgvDados.Name = "dgvDados";
@@ -56,22 +61,6 @@ namespace View
             this.dgvDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDados.Size = new System.Drawing.Size(556, 458);
             this.dgvDados.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(107, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Busca:";
-            // 
-            // txbBusca
-            // 
-            this.txbBusca.Location = new System.Drawing.Point(158, 34);
-            this.txbBusca.Name = "txbBusca";
-            this.txbBusca.Size = new System.Drawing.Size(339, 20);
-            this.txbBusca.TabIndex = 2;
             // 
             // colCPF
             // 
@@ -94,6 +83,22 @@ namespace View
             this.colEmail.ReadOnly = true;
             this.colEmail.Width = 200;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(107, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Busca:";
+            // 
+            // txbBusca
+            // 
+            this.txbBusca.Location = new System.Drawing.Point(158, 34);
+            this.txbBusca.Name = "txbBusca";
+            this.txbBusca.Size = new System.Drawing.Size(339, 20);
+            this.txbBusca.TabIndex = 2;
+            // 
             // btnFechar
             // 
             this.btnFechar.Location = new System.Drawing.Point(534, 548);
@@ -102,6 +107,21 @@ namespace View
             this.btnFechar.TabIndex = 3;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // menuPopup
+            // 
+            this.menuPopup.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miDeletar});
+            this.menuPopup.Name = "menuPopup";
+            this.menuPopup.Size = new System.Drawing.Size(181, 48);
+            // 
+            // miDeletar
+            // 
+            this.miDeletar.Name = "miDeletar";
+            this.miDeletar.Size = new System.Drawing.Size(180, 22);
+            this.miDeletar.Text = "Deletar";
+            this.miDeletar.Click += new System.EventHandler(this.miDeletar_Click);
             // 
             // FrmListaDePessoas
             // 
@@ -118,6 +138,7 @@ namespace View
             this.Text = "Lista de Pessoas Cadastradas no Mapa (Dictionary)";
             this.Load += new System.EventHandler(this.FrmListaDePessoas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
+            this.menuPopup.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +153,7 @@ namespace View
         private System.Windows.Forms.DataGridViewTextBoxColumn colNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmail;
         private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.ContextMenuStrip menuPopup;
+        private System.Windows.Forms.ToolStripMenuItem miDeletar;
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Model;
+using Control;
 
 namespace View
 {
@@ -26,11 +27,23 @@ namespace View
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             //Preenchimento do Objeto P
-            Pessoa p = CarregarObjetoPessoaDoForm();
+            //this.Tag = p;
+            //this.Close();
+            try
+            {
+                Pessoa p = CarregarObjetoPessoaDoForm();
 
-            this.Tag = p;
+                PessoaCtrl control = new PessoaCtrl();
 
-            this.Close();
+                if((Boolean)control.BD("inserir", p))
+                {
+                    MessageBox.Show("Pessoa cadastrada com sucesso!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO AO INSERIR DADOS NO BD: " + ex.Message);
+            }
         }
 
         private Pessoa CarregarObjetoPessoaDoForm()

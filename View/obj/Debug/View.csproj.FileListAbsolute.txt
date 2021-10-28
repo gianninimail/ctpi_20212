@@ -14,8 +14,13 @@ C:\Users\Thiago G Ramos\source\repos\AppAula20212\View\obj\Debug\View.csproj.Cop
 C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\View.exe.config
 C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\View.exe
 C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\View.pdb
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\Control.dll
 C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\Model.dll
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\DAO.dll
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\Control.pdb
 C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\Model.pdb
+C:\Users\User\source\repos\ctpi_20212\View\bin\Debug\DAO.pdb
 C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.FrmCadPessoa.resources
 C:\Users\User\source\repos\ctpi_20212\View\obj\Debug\View.FrmListaDePessoas.resources

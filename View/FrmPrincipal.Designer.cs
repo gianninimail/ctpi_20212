@@ -30,7 +30,6 @@ namespace View
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.barraStatus = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.itbUsuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
@@ -45,8 +44,8 @@ namespace View
             this.imSair = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barraTarefas = new System.Windows.Forms.ToolStrip();
-            this.brBtnCadastrar = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.brBtnCadastrar = new System.Windows.Forms.ToolStripButton();
             this.brBtnListarPessoas = new System.Windows.Forms.ToolStripButton();
             this.barraStatus.SuspendLayout();
             this.menuPrincipal.SuspendLayout();
@@ -123,26 +122,26 @@ namespace View
             // 
             this.imAbrir.Name = "imAbrir";
             this.imAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.imAbrir.Size = new System.Drawing.Size(180, 22);
+            this.imAbrir.Size = new System.Drawing.Size(145, 22);
             this.imAbrir.Text = "Abrir";
             // 
             // imSalvar
             // 
             this.imSalvar.Name = "imSalvar";
             this.imSalvar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.imSalvar.Size = new System.Drawing.Size(180, 22);
+            this.imSalvar.Size = new System.Drawing.Size(145, 22);
             this.imSalvar.Text = "Salvar";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(142, 6);
             // 
             // imSair
             // 
             this.imSair.Name = "imSair";
             this.imSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.imSair.Size = new System.Drawing.Size(180, 22);
+            this.imSair.Size = new System.Drawing.Size(145, 22);
             this.imSair.Text = "Sair";
             this.imSair.Click += new System.EventHandler(this.imSair_Click);
             // 
@@ -165,16 +164,6 @@ namespace View
             this.barraTarefas.TabIndex = 2;
             this.barraTarefas.Text = "toolStrip1";
             // 
-            // brBtnCadastrar
-            // 
-            this.brBtnCadastrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.brBtnCadastrar.Image = global::View.Properties.Resources.user_add;
-            this.brBtnCadastrar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.brBtnCadastrar.Name = "brBtnCadastrar";
-            this.brBtnCadastrar.Size = new System.Drawing.Size(42, 44);
-            this.brBtnCadastrar.Text = "Adicionar novo usuário!";
-            this.brBtnCadastrar.Click += new System.EventHandler(this.brBtnCadastrar_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -186,14 +175,24 @@ namespace View
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // brBtnCadastrar
+            // 
+            this.brBtnCadastrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.brBtnCadastrar.Image = global::View.Properties.Resources.user_add;
+            this.brBtnCadastrar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.brBtnCadastrar.Name = "brBtnCadastrar";
+            this.brBtnCadastrar.Size = new System.Drawing.Size(42, 44);
+            this.brBtnCadastrar.Text = "Adicionar novo usuário!";
+            this.brBtnCadastrar.Click += new System.EventHandler(this.brBtnCadastrar_Click);
+            // 
             // brBtnListarPessoas
             // 
             this.brBtnListarPessoas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.brBtnListarPessoas.Image = ((System.Drawing.Image)(resources.GetObject("brBtnListarPessoas.Image")));
+            this.brBtnListarPessoas.Image = global::View.Properties.Resources.user_list;
             this.brBtnListarPessoas.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.brBtnListarPessoas.Name = "brBtnListarPessoas";
             this.brBtnListarPessoas.Size = new System.Drawing.Size(42, 44);
-            this.brBtnListarPessoas.Text = "toolStripButton1";
+            this.brBtnListarPessoas.Text = "Listar Pessoas";
             this.brBtnListarPessoas.Click += new System.EventHandler(this.brBtnListarPessoas_Click);
             // 
             // FrmPrincipal

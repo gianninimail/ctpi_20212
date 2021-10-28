@@ -1,2 +1,12 @@
+C:\Users\User\source\repos\ctpi_20212\Control\bin\Debug\Control.dll
+C:\Users\User\source\repos\ctpi_20212\Control\bin\Debug\Control.pdb
+C:\Users\User\source\repos\ctpi_20212\Control\bin\Debug\DAO.dll
+C:\Users\User\source\repos\ctpi_20212\Control\bin\Debug\Model.dll
+C:\Users\User\source\repos\ctpi_20212\Control\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\User\source\repos\ctpi_20212\Control\bin\Debug\DAO.pdb
+C:\Users\User\source\repos\ctpi_20212\Control\bin\Debug\Model.pdb
 C:\Users\User\source\repos\ctpi_20212\Control\obj\Debug\Control.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\ctpi_20212\Control\obj\Debug\Control.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ctpi_20212\Control\obj\Debug\Control.csproj.CopyComplete
+C:\Users\User\source\repos\ctpi_20212\Control\obj\Debug\Control.dll
+C:\Users\User\source\repos\ctpi_20212\Control\obj\Debug\Control.pdb

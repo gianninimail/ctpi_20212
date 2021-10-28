@@ -121,13 +121,16 @@
   <data name="logo-lasallerj1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-lasallerj1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logo2-lasallerj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo2-lasallerj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-add.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo-lasallerj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-lasallerj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo2-lasallerj" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo2-lasallerj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-list.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
