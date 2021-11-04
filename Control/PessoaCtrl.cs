@@ -27,7 +27,7 @@ namespace Control
                 case "pessoa":
                     return dao.BuscarPorCPF((Int64)_parametro);
                 case "filtro":
-                    //return dao.BuscarListaFiltrada(_parametro.ToString());
+                    return dao.BuscarListaFiltrada(_parametro.ToString());
                 default:
                     return "Comando inválido!";
             }

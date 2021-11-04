@@ -14,6 +14,7 @@ namespace View
 {
     public partial class FrmListaDePessoas : Form
     {
+        private Dictionary<Int64, Pessoa> mapa;
         public FrmListaDePessoas()
         {
             InitializeComponent();
@@ -23,13 +24,7 @@ namespace View
         {
             try
             {
-                PessoaCtrl control = new PessoaCtrl();
-                Dictionary<Int64, Pessoa> mapa = (Dictionary < Int64, Pessoa>)control.BD("todos", null);
-
-                foreach (Pessoa p in mapa.Values)
-                {
-                    dgvDados.Rows.Add(p.CPF, p.Nome, p.Email);
-                }
+                CarregarGrid("");
             }
             catch (Exception ex)
             {
@@ -63,6 +58,7 @@ namespace View
                 PessoaCtrl control = new PessoaCtrl();
                 if((Boolean)control.BD("deletar", cpfSelecionado))
                 {
+                    CarregarGrid("");
                     MessageBox.Show("Pessoa deletada com sucesso!");
                 }
 
@@ -70,6 +66,64 @@ namespace View
             catch (Exception ex)
             {
                 MessageBox.Show("ERRO AO DELETAR PESSOA: " + ex.Message);
+            }
+        }
+
+        private void CarregarGrid(String _filtro)
+        {
+            try
+            {
+                dgvDados.Rows.Clear();
+                if (_filtro.Length > 2)
+                {
+                    PessoaCtrl control = new PessoaCtrl();
+                    mapa = (Dictionary<Int64, Pessoa>)control.BD("filtro", _filtro);
+
+                    foreach (Pessoa p in mapa.Values)
+                    {
+                        dgvDados.Rows.Add(p.CPF, p.Nome, p.Email);
+                    }
+                }
+                else
+                {
+                    PessoaCtrl control = new PessoaCtrl();
+                    mapa = (Dictionary<Int64, Pessoa>)control.BD("todos", null);
+
+                    foreach (Pessoa p in mapa.Values)
+                    {
+                        dgvDados.Rows.Add(p.CPF, p.Nome, p.Email);
+                    }
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO AO CARREGAR GRID COM FILTRO: " + ex.Message);
+            }
+        }
+
+        private void dgvDados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Int64 cpfSelecionado = Convert.ToInt64(dgvDados.SelectedRows[0].Cells[0].Value.ToString());
+
+            Pessoa p = mapa[cpfSelecionado];
+
+            FrmCadPessoa form = new FrmCadPessoa();
+
+            form.Tag = p;
+
+            form.ShowDialog();
+        }
+
+        private void txbBusca_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                CarregarGrid(txbBusca.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO FAZER BUSCA: " + ex.Message);
             }
         }
     }

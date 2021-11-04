@@ -17,9 +17,5 @@ namespace Model
         public Int32 Cidade { get; set; }
 
         public Int32 Estado { get; set; }
-
-        public Pessoa pessoa { get; set; }
-
-
     }
 }

@@ -67,6 +67,8 @@ namespace View
             this.txbNome = new System.Windows.Forms.TextBox();
             this.mtbCPF = new System.Windows.Forms.MaskedTextBox();
             this.ptbFoto = new System.Windows.Forms.PictureBox();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.lblIdEnd = new System.Windows.Forms.Label();
             this.gpbEndereco.SuspendLayout();
             this.gpbDadosComplementares.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -78,6 +80,7 @@ namespace View
             // 
             // gpbEndereco
             // 
+            this.gpbEndereco.Controls.Add(this.lblIdEnd);
             this.gpbEndereco.Controls.Add(this.label4);
             this.gpbEndereco.Controls.Add(this.label3);
             this.gpbEndereco.Controls.Add(this.label2);
@@ -481,12 +484,33 @@ namespace View
             this.ptbFoto.TabIndex = 0;
             this.ptbFoto.TabStop = false;
             // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Location = new System.Drawing.Point(375, 712);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btnAlterar.TabIndex = 4;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Visible = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // lblIdEnd
+            // 
+            this.lblIdEnd.AutoSize = true;
+            this.lblIdEnd.Location = new System.Drawing.Point(648, 16);
+            this.lblIdEnd.Name = "lblIdEnd";
+            this.lblIdEnd.Size = new System.Drawing.Size(13, 13);
+            this.lblIdEnd.TabIndex = 8;
+            this.lblIdEnd.Text = "0";
+            // 
             // FrmCadPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 773);
             this.ControlBox = false;
+            this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.gpbDadosPrincipais);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
@@ -496,6 +520,7 @@ namespace View
             this.Name = "FrmCadPessoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrado de Usuários";
+            this.Load += new System.EventHandler(this.FrmCadPessoa_Load);
             this.gpbEndereco.ResumeLayout(false);
             this.gpbEndereco.PerformLayout();
             this.gpbDadosComplementares.ResumeLayout(false);
@@ -552,5 +577,7 @@ namespace View
         private System.Windows.Forms.TextBox txbNome;
         private System.Windows.Forms.MaskedTextBox mtbCPF;
         private System.Windows.Forms.PictureBox ptbFoto;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Label lblIdEnd;
     }
 }

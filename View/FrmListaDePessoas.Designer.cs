@@ -34,11 +34,11 @@ namespace View
             this.colCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuPopup = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.miDeletar = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.txbBusca = new System.Windows.Forms.TextBox();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.menuPopup = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.miDeletar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.menuPopup.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,7 @@ namespace View
             this.dgvDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDados.Size = new System.Drawing.Size(556, 458);
             this.dgvDados.TabIndex = 0;
+            this.dgvDados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDados_CellDoubleClick);
             // 
             // colCPF
             // 
@@ -83,6 +84,20 @@ namespace View
             this.colEmail.ReadOnly = true;
             this.colEmail.Width = 200;
             // 
+            // menuPopup
+            // 
+            this.menuPopup.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miDeletar});
+            this.menuPopup.Name = "menuPopup";
+            this.menuPopup.Size = new System.Drawing.Size(112, 26);
+            // 
+            // miDeletar
+            // 
+            this.miDeletar.Name = "miDeletar";
+            this.miDeletar.Size = new System.Drawing.Size(111, 22);
+            this.miDeletar.Text = "Deletar";
+            this.miDeletar.Click += new System.EventHandler(this.miDeletar_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -98,6 +113,7 @@ namespace View
             this.txbBusca.Name = "txbBusca";
             this.txbBusca.Size = new System.Drawing.Size(339, 20);
             this.txbBusca.TabIndex = 2;
+            this.txbBusca.TextChanged += new System.EventHandler(this.txbBusca_TextChanged);
             // 
             // btnFechar
             // 
@@ -108,20 +124,6 @@ namespace View
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
-            // 
-            // menuPopup
-            // 
-            this.menuPopup.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.miDeletar});
-            this.menuPopup.Name = "menuPopup";
-            this.menuPopup.Size = new System.Drawing.Size(181, 48);
-            // 
-            // miDeletar
-            // 
-            this.miDeletar.Name = "miDeletar";
-            this.miDeletar.Size = new System.Drawing.Size(180, 22);
-            this.miDeletar.Text = "Deletar";
-            this.miDeletar.Click += new System.EventHandler(this.miDeletar_Click);
             // 
             // FrmListaDePessoas
             // 

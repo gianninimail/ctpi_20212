@@ -33,8 +33,61 @@ namespace DAO
                     "[estado_civil]," +
                     "[filhos]," +
                     "[animais]," +
-                    "[fumante] " +
+                    "[fumante], " +
+                    "[endereco_id] " +
                     "FROM [pessoas] ORDER BY cpf;";
+
+                DataTableReader data = BD.ExecutarSelect(SQL);
+
+                while (data.Read())
+                {
+                    Pessoa p = new Pessoa();
+
+                    p.CPF = data.GetInt64(0);
+                    p.Nome = data.GetString(1);
+                    p.Email = data.GetString(2);
+                    p.Cel = data.GetString(3);
+                    p.Nascimento = data.GetDateTime(4);
+                    p.Profissão = data.GetString(5);
+                    p.Sexo = data.GetString(6);
+                    p.EstadoCivil = data.GetString(7);
+                    p.Filhos = data.GetBoolean(8);
+                    p.Animais = data.GetBoolean(9);
+                    p.Fumante = data.GetBoolean(10);
+                    Int32 idEnd = data.GetInt32(11);
+
+                    EnderecoDAO daoEND = new EnderecoDAO();
+                    p.Endereco = daoEND.BuscarPorID(idEnd);
+
+                    mapaPessoas.Add(p.CPF, p);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("BUSCAR TODOS / " + ex.Message);
+            }
+
+            return mapaPessoas;
+        }
+
+        public Dictionary<Int64, Pessoa> BuscarListaFiltrada(String _filtro)
+        {
+            Dictionary<Int64, Pessoa> mapaPessoas = new Dictionary<Int64, Pessoa>();
+            try
+            {
+                String SQL = "SELECT * FROM pessoas WHERE ";
+
+                Int64 saida;
+                if (Int64.TryParse(_filtro, out saida))
+                {
+                    SQL += String.Format("cpf = {0}", _filtro);
+                }
+                else
+                {
+                    SQL += String.Format("nome LIKE '%{0}%'", _filtro);
+                }
+
+                SQL += " ORDER BY cpf;";
 
                 DataTableReader data = BD.ExecutarSelect(SQL);
 
@@ -59,7 +112,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-                throw new Exception("BUSCAR TODOS / " + ex.Message);
+                throw new Exception("BUSCAR PELOS FILTROS / " + ex.Message);
             }
 
             return mapaPessoas;
@@ -105,6 +158,9 @@ namespace DAO
 
             try
             {
+                EnderecoDAO daoEND = new EnderecoDAO();
+                Int32 novoIDinserido = daoEND.Inserir(_obj.Endereco);
+
                 String SQL = String.Format("INSERT INTO pessoas (" +
                     "cpf," +
                     "nome," +
@@ -116,9 +172,10 @@ namespace DAO
                     "estado_civil," +
                     "filhos," +
                     "animais," +
-                    "fumante" +
+                    "fumante," +
+                    "endereco_id" +
                     ") " +
-                    "VALUES ({0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}');",
+                    "VALUES ({0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', {11});",
                     _obj.CPF,
                     _obj.Nome,
                     _obj.Email,
@@ -129,7 +186,8 @@ namespace DAO
                     _obj.EstadoCivil,
                     _obj.Filhos,
                     _obj.Animais,
-                    _obj.Fumante
+                    _obj.Fumante,
+                    novoIDinserido
                     );
 
                 linhasAfetasdas = BD.ExecutarIDU(SQL);
@@ -183,7 +241,7 @@ namespace DAO
             {
                 String SQL = String.Format("UPDATE pessoas SET " +
                     "nome = '{0}'," +
-                    "email = {1}," +
+                    "email = '{1}'," +
                     "cel = '{2}'," +
                     "nascimento = '{3}'," +
                     "profissao = '{4}', " +
@@ -206,7 +264,11 @@ namespace DAO
                     _obj.CPF
                     );
 
-                linhasAfetasdas = BD.ExecutarIDU(SQL);
+                EnderecoDAO daoEND = new EnderecoDAO();
+                if (daoEND.Alterar(_obj.Endereco))
+                {
+                    linhasAfetasdas = BD.ExecutarIDU(SQL);
+                }
             }
             catch (Exception ex)
             {
