@@ -30,6 +30,7 @@ namespace View
         private void InitializeComponent()
         {
             this.gpbEndereco = new System.Windows.Forms.GroupBox();
+            this.lblIdEnd = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -68,7 +69,6 @@ namespace View
             this.mtbCPF = new System.Windows.Forms.MaskedTextBox();
             this.ptbFoto = new System.Windows.Forms.PictureBox();
             this.btnAlterar = new System.Windows.Forms.Button();
-            this.lblIdEnd = new System.Windows.Forms.Label();
             this.gpbEndereco.SuspendLayout();
             this.gpbDadosComplementares.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -95,6 +95,15 @@ namespace View
             this.gpbEndereco.TabIndex = 1;
             this.gpbEndereco.TabStop = false;
             this.gpbEndereco.Text = "Endereço";
+            // 
+            // lblIdEnd
+            // 
+            this.lblIdEnd.AutoSize = true;
+            this.lblIdEnd.Location = new System.Drawing.Point(648, 16);
+            this.lblIdEnd.Name = "lblIdEnd";
+            this.lblIdEnd.Size = new System.Drawing.Size(13, 13);
+            this.lblIdEnd.TabIndex = 8;
+            this.lblIdEnd.Text = "0";
             // 
             // label4
             // 
@@ -135,14 +144,6 @@ namespace View
             // cmbCidade
             // 
             this.cmbCidade.FormattingEnabled = true;
-            this.cmbCidade.Items.AddRange(new object[] {
-            "Rio de Janeiro",
-            "Araruama",
-            "Niterói",
-            "Vitória",
-            "Belo Horizonte",
-            "São Paulo",
-            "Santos"});
             this.cmbCidade.Location = new System.Drawing.Point(432, 141);
             this.cmbCidade.Name = "cmbCidade";
             this.cmbCidade.Size = new System.Drawing.Size(188, 21);
@@ -151,15 +152,11 @@ namespace View
             // cmbEstado
             // 
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Items.AddRange(new object[] {
-            "RJ",
-            "SP",
-            "MG",
-            "ES"});
             this.cmbEstado.Location = new System.Drawing.Point(432, 55);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(188, 21);
             this.cmbEstado.TabIndex = 2;
+            this.cmbEstado.SelectedValueChanged += new System.EventHandler(this.cmbEstado_SelectedValueChanged);
             // 
             // txbLogradouro
             // 
@@ -494,15 +491,6 @@ namespace View
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Visible = false;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
-            // 
-            // lblIdEnd
-            // 
-            this.lblIdEnd.AutoSize = true;
-            this.lblIdEnd.Location = new System.Drawing.Point(648, 16);
-            this.lblIdEnd.Name = "lblIdEnd";
-            this.lblIdEnd.Size = new System.Drawing.Size(13, 13);
-            this.lblIdEnd.TabIndex = 8;
-            this.lblIdEnd.Text = "0";
             // 
             // FrmCadPessoa
             // 
