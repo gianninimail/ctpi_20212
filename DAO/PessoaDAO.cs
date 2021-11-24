@@ -180,7 +180,7 @@ namespace DAO
                     _obj.Nome,
                     _obj.Email,
                     _obj.Cel,
-                    _obj.Nascimento,
+                    _obj.Nascimento.ToString("MM/dd/yyyy"),
                     _obj.Profissão,
                     _obj.Sexo,
                     _obj.EstadoCivil,
